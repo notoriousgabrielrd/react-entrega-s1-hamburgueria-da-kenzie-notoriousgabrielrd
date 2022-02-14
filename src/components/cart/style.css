@@ -13,3 +13,46 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.div-cart-itens button {
+  font-family: "Inter", sans-serif;
+  color: #bdbdbd;
+
+  font-size: 16px;
+  height: 20px;
+  width: 60px;
+  margin: 3vh;
+  border: solid #f5f5f5;
+  background-color: #f5f5f5;
+}
+.div-cart-itens button:hover {
+  cursor: pointer;
+}
+.vitrine {
+  background-color: #e0e0e0;
+  width: 82px;
+  height: 82px;
+  border: solid 2px #e0e0e0;
+  border-radius: 5px;
+}
+.vitrine img {
+  height: 72px;
+  width: 72px;
+}
+.h2-cart {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+.info-cart {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+.span-categoria {
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  color: #828282;
+  font-size: 16px;
+}

@@ -41,7 +41,7 @@ function App() {
   }
   const precoTotal = () => {
     const result = card.reduce((acc, cur) => cur.price + acc, 0)
-    return result
+    return result.toFixed(2)
 
   }
 
@@ -56,15 +56,24 @@ function App() {
         <section className='section-card'>
           {products.map((value, index) => <Card value={value} click={filterProduct} key={index} />)}
         </section>
-        <section>
+        <section className='section-cart'>
+          <h3 className="div-h3">Carrinho de compras</h3>
           {
-            card.length == 0 ? (<><span>vazio</span></>) : (card.map((value, index) => <Cart value={value} click={filterRemove} card={card} key={index} />))
+            card.length == 0 ? (<div className='div-msg'>
+              <h3 className='h3-vazio'>Sua sacola está vazia</h3>
+              <p className='p-vazio'>Adicione itens</p>
+            </div >)
+              : (card.map((value, index) => <Cart value={value} click={filterRemove} card={card} key={index} />))
           }
-          <span>total</span>
-          <Preco price={precoTotal} />
+          <hr></hr>
+          <div className='div-span'>
+            <div className='span-price'>
+              <span className='total-price'>Total</span>
+              <Preco price={precoTotal} />
+            </div>
 
-
-          <button onClick={() => setCard([])}>remove todos</button>
+            <button className='remove-todos' onClick={() => setCard([])}>remove todos</button>
+          </div>
         </section>
       </div>
 

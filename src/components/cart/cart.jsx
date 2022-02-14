@@ -2,16 +2,16 @@ import "./style.css";
 const Cart = ({ value, click }) => {
   return (
     <div className="div-cart-pai">
-      <h2>Carrinho de compras</h2>
       <div className="div-cart-itens">
-        <img src={value.img} />
-        <div>
-          <h2>{value.name}</h2>
-          <span>{value.category}</span>
+        <div className="vitrine">
+          <img src={value.img} />
         </div>
-        <button onClick={() => click(value.id)}>X</button>
+        <div className="info-cart">
+          <h3 className="h2-cart">{value.name}</h3>
+          <span className="span-categoria">{value.category}</span>
+        </div>
+        <button onClick={() => click(value.id)}>remover</button>
       </div>
-      <hr></hr>
       <div className="div-cart-preco"></div>
     </div>
   );
