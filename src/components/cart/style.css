@@ -1,0 +1,15 @@
+.div-cart-pai {
+  display: flex;
+  flex-direction: column;
+}
+.div-cart-itens {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.div-cart-preco {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

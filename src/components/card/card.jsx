@@ -1,13 +1,15 @@
 import "./style.css";
 
-const Card = ({ img, name, category, price, id }) => {
+const Card = ({ value, click }) => {
   return (
-    <div id={id} className="div-card">
-      <img src={img} alt={category} />
-      <h2>{name}</h2>
-      <span>{category}</span>
-      <span>{price}</span>
-      <button>adicionar </button>
+    <div id={value.id} className="div-card">
+      <img src={value.img} alt={value.category} />
+      <h2>{value.name}</h2>
+      <span>{value.category}</span>
+      <span>{value.price}</span>
+      <button id={value.id} onClick={() => click(value.id)}>
+        adicionar
+      </button>
     </div>
   );
 };

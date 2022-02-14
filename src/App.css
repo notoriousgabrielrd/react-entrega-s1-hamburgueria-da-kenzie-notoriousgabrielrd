@@ -1,3 +1,8 @@
+.div-Card-pai {
+  display: flex;
+  flex-direction: row;
+}
+
 .header-top {
   display: flex;
   flex-direction: row;
