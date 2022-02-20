@@ -1,0 +1,139 @@
+.div-Card-pai {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-top {
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+}
+
+.header-top img {
+  margin-left: 10vh;
+  height: 25px;
+  width: 150px;
+}
+.header-top input {
+  padding: 0 10px 0 15px;
+  width: 350px;
+  height: 60px;
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-right: 10vh;
+}
+
+.section-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1110px;
+}
+.section-cart {
+  background-color: #f5f5f5;
+  max-height: 900px;
+  max-width: 500px;
+  margin-right: 50px;
+}
+.div-h3 {
+  background-color: #27ae60;
+  border: solid 2px #27ae60;
+  border-radius: 5px 5px 0px 0px;
+  max-width: 650px;
+  text-align: center;
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 70px;
+}
+
+.total-price {
+  color: #333333;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-right: 33vh;
+}
+.span-price {
+  display: flex;
+  margin: 0 16px;
+  justify-content: space-between;
+}
+.div-msg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.h3-vazio {
+  font-family: "Inter", sans-serif;
+  width: 342px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 24px;
+  margin-left: 7vh;
+  color: #333333;
+}
+
+.p-vazio {
+  width: 345px;
+  font-family: "Inter", sans-serif;
+  height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #828282;
+  margin-left: 24vh;
+  margin-top: 0.3vh;
+}
+
+.remove-todos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  width: 343px;
+  height: 60px;
+  background-color: #e0e0e0;
+  border: 2px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #828282;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+.remove-todos:hover {
+  cursor: pointer;
+}
+.div-span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

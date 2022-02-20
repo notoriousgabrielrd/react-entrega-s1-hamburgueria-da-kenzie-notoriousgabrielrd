@@ -1,0 +1,24 @@
+.button-nav {
+  background-color: #27ae60;
+  width: 160px;
+  height: 40px;
+  border: solid 2px #27ae60;
+  border-radius: 8px;
+  padding: 0px 20px 0px 20px;
+  color: #ffffff;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  margin-bottom: 2vh;
+  margin-right: 40px;
+}
+
+.button-nav:hover {
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+}
