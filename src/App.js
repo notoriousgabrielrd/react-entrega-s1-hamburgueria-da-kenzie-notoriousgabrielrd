@@ -14,8 +14,10 @@ function App() {
   const [filterPerKey, setFilterPerKey] = useState([])
 
   const keyFilter = (value) => {
-    const result = products.filter((element) => value == element.name)
+  
+    const result = products.filter((element) => { if (value.toLowerCase() == element.name.toLowerCase() || value.toLowerCase() == element.category.toLowerCase()) { return element } })
     console.log(result)
+    setFilterPerKey(result)
     return result
   }
 
@@ -45,7 +47,7 @@ function App() {
 
   }
 
-  console.log(card.length)
+  // console.log(card.length)
   return (
     <div className="App">
       <header className='header-top'>
@@ -54,7 +56,9 @@ function App() {
       </header>
       <div className='div-Card-pai'>
         <section className='section-card'>
-          {products.map((value, index) => <Card value={value} click={filterProduct} key={index} />)}
+          {filterPerKey.length > 0 ? (filterPerKey.map((value, index) => <Card value={value} click={filterProduct} key={index} />)) : (products.map((value, index) => <Card value={value} click={filterProduct} key={index} />))
+
+          }
         </section>
         <section className='section-cart'>
           <h3 className="div-h3">Carrinho de compras</h3>

@@ -8,12 +8,15 @@ const Input = ({ products, keyFilter }) => {
     <div>
       <form>
         <input
-          onChange={(e) => setValue(e.target.value)}
+          onChange={(e) => {
+            setValue(e.target.value);
+          }}
           type="text"
-          placeholder="tem que ter botao aqui dentro"
+          placeholder="pesquisar produto"
           value={value}
         ></input>
         <button
+          className="button-nav"
           onClick={(e) => {
             e.preventDefault();
             keyFilter(value);
